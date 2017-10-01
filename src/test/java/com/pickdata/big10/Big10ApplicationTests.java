@@ -1,4 +1,4 @@
-package com.example.big10;
+package com.pickdata.big10;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
