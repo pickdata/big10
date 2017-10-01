@@ -6,7 +6,7 @@
 	<groupId>com.pickdata</groupId>
 	<artifactId>big10</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>big10</name>
 	<description>Springboot and Hadoop basic setting</description>
@@ -33,7 +33,7 @@
 			<artifactId>spring-data-hadoop-boot</artifactId>
 			<version>2.2.0.RELEASE</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
@@ -168,12 +168,25 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.mrunit</groupId> -->
+		<!-- <artifactId>mrunit</artifactId> -->
+		<!-- <version>1.1.0</version> -->
+		<!-- <classifier>hadoop1</classifier> -->
+		<!-- </dependency> -->
 		<dependency>
-			<groupId>org.apache.mrunit</groupId>
-			<artifactId>mrunit</artifactId>
-			<version>1.1.0</version>
-			<classifier>hadoop1</classifier>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-library</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
+
+
 	</dependencies>
 
 	<build>
